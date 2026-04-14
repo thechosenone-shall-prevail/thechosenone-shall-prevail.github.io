@@ -1,6 +1,5 @@
 {
   "buildCommand": null,
-  "outputDirectory": ".",
-  "installCommand": null,
-  "framework": "none"
+  "outputDirectory": "blog1",
+  "installCommand": null
 }
