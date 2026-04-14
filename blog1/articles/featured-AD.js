@@ -2213,6 +2213,11 @@ $ACL.Access | Where-Object {
 `
 };
 
+if (typeof window !== 'undefined') {
+    if (!window.comprehensiveArticles) window.comprehensiveArticles = {};
+    window.comprehensiveArticles['ad-advanced'] = adAdvancedAttacksArticle;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = adAdvancedAttacksArticle;
 }

@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sameer Shah - Cybersecurity & Penetration Testing</title>
+    <title>Sameer Shah - Security Researcher & Adversarial Thinker</title>
     <meta name="description"
-        content="Technical blog on cybersecurity, penetration testing, networking, and ethical hacking by Sameer shah">
+        content="Technical blog on AI Red Teaming, Windows Internals, and Active Directory by Sameer Shah (the chosen one)">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <h2>[Your Brand/Name]</h2>
-                <p class="nav-tagline">[Your Tagline Here]</p>
+                <h2>Sameer Shah</h2>
+                <p class="nav-tagline">Security Researcher & Adversarial Thinker</p>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="active">Home</a></li>
@@ -37,22 +37,22 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1> Articles, Projects & Stuff I Actually Find Interesting :D </h1>
+        <h1> Security Researcher, Adversarial Thinker & Project Builder </h1>
                 <p class="hero-description">
-                    Topics I teach, projects I build, and things I'm figuring out — mostly cybersecurity stuff.
+                    I study how systems fail, then I build things that prove it. Deep in AI Red Teaming, Windows Internals, and finding the gaps between claim and reality.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">1+</span>
-                        <span class="stat-label">Articles (more coming!)</span>
+                        <span class="stat-number">HTB</span>
+                        <span class="stat-label">Top 0.5% Active</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">∞</span>
-                        <span class="stat-label">Things to Learn</span>
+                        <span class="stat-label">System Gaps to Explore</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">:D</span>
-                        <span class="stat-label">Always Having Fun With It</span>
+                        <span class="stat-label">Adversarial Mindset</span>
                     </div>
                 </div>
             </div>
@@ -61,18 +61,16 @@
         <!-- Featured Article -->
         <section class="featured-section">
             <h2 class="section-title">Featured Article</h2>
-            <article class="featured-article" onclick="loadArticle('placeholder-id')">
+            <article class="featured-article" onclick="loadArticle('ad-advanced')">
                 <div class="featured-content">
-                    <span class="article-tag">[Category Tag]</span>
-                    <h3>[Your Featured Article Title]</h3>
+                    <span class="article-tag">Active Directory</span>
+                    <h3>Active Directory Advanced Attacks: GPO, Delegation, and Persistence</h3>
                     <p class="article-excerpt">
-                        [This is where the excerpt for your featured article goes. 
-                        Replace this text with a summary of the article's contents, 
-                        highlighting key topics and why it is important to read.]
+                        Mastering sophisticated AD exploitation methods—from GPO abuse and Kerberos delegation (unconstrained, constrained, RBCD) to NTLM relay and advanced ticket attacks. Understanding where systems fail under pressure.
                     </p>
                     <div class="article-meta">
-                        <span class="read-time">[X] min read</span>
-                        <span class="date">[Publish Date]</span>
+                        <span class="read-time">70 min read</span>
+                        <span class="date">February 15, 2025</span>
                     </div>
                 </div>
                 <div class="featured-image">
@@ -108,6 +106,54 @@
                     </div>
                 </article>
 
+                <!-- Project: KERB-SLEUTH -->
+                <article class="article-card post-list-thumb" onclick="window.open('https://github.com/thechosenone-shall-prevail/KERB-SLEUTH', '_blank')">
+                    <div class="article-header">
+                        <span class="article-tag">Project / Tool</span>
+                        <span class="difficulty advanced">Go</span>
+                    </div>
+                    <h3>KERB-SLEUTH</h3>
+                    <p class="article-excerpt">
+                        Advanced Go CLI tool for Active Directory Kerberos security triage. Automates live LDAP enumeration and password cracking.
+                    </p>
+                    <div class="article-footer">
+                        <span class="read-time">GitHub Repo</span>
+                        <span class="arrow">↗</span>
+                    </div>
+                </article>
+
+                <!-- Project: BASTION 2026 -->
+                <article class="article-card post-list-thumb" onclick="window.open('https://github.com/thechosenone-shall-prevail/bastion', '_blank')">
+                    <div class="article-header">
+                        <span class="article-tag">CTF / Event</span>
+                        <span class="difficulty intermediate">Organizer</span>
+                    </div>
+                    <h3>BASTION 2026</h3>
+                    <p class="article-excerpt">
+                        Organized and designed the BASTION 2026 CTF competition. A security challenge for the next generation.
+                    </p>
+                    <div class="article-footer">
+                        <span class="read-time">GitHub Repo</span>
+                        <span class="arrow">↗</span>
+                    </div>
+                </article>
+
+                <!-- Project: KaliDex -->
+                <article class="article-card post-list-thumb" onclick="window.open('https://github.com/thechosenone-shall-prevail/KaliDex', '_blank')">
+                    <div class="article-header">
+                        <span class="article-tag">Project</span>
+                        <span class="difficulty beginner">HTML</span>
+                    </div>
+                    <h3>KaliDex</h3>
+                    <p class="article-excerpt">
+                        A personalized collection and index for Kali Linux tools and workflows.
+                    </p>
+                    <div class="article-footer">
+                        <span class="read-time">GitHub Repo</span>
+                        <span class="arrow">↗</span>
+                    </div>
+                </article>
+
                 <!-- More articles dropping soon! -->
                 <div class="coming-soon-card">
                     <span class="article-tag">Coming Soon</span>
@@ -125,33 +171,36 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        [Write your personal or professional biography here. Describe your journey, interests, and what you aim to share through this blog.]
+                        I don't identify as a developer. Code is a tool, the same way Kali is a tool, and Burp Suite is a tool, and a well-crafted LDAP filter is a tool. What I actually do is study how systems fail. Then I build things that prove it.
                     </p>
                     <p>
-                        [Second paragraph: Expand on your background, current role, or specific areas of expertise.]
+                        Right now I'm deep in two spaces that are fundamentally the same problem: AI alignment as an attack surface and Windows Active Directory trust abuse. Both are about finding where a system's confidence in itself exceeds its actual security posture.
                     </p>
                     <p>
-                        [Third paragraph: Add a concluding thought, welcoming readers or stating your blog's mission.]
+                        I've worked across the full stack of offensive research from kernel-level Windows internals to LLM constitutional bypasses. Cloud infrastructure, custom C2 servers, live network attacks, real operating environments. Done in the actual wild :)
                     </p>
                     <blockquote>
-                        "[Your favorite quote goes here]"
+                        "Every system has a gap between what it claims to do and what it actually does. That gap is my workspace."
                     </blockquote>
                     <div class="about-focus">
-                        <h3>Currently Learning:</h3>
+                        <h3>Research Focus:</h3>
                         <ul>
-                            <li>[Topic or skill you are learning]</li>
-                            <li>[Another topic or skill]</li>
-                            <li>[Additional interest]</li>
+                            <li><strong>AI Red Teaming:</strong> Exploring holes in approximately aligned models.</li>
+                            <li><strong>Windows Trust Architecture:</strong> Exploiting decisions made before modern threat actors existed.</li>
+                            <li><strong>C2 Infrastructure:</strong> Building and operating real command-and-control systems.</li>
+                            <li><strong>Cloud Privilege Escalation:</strong> Hunting for IAM misconfigurations and role chaining.</li>
                         </ul>
                     </div>
                     <div class="about-tools">
-                        <h3>Technologies I'm familiar with...</h3>
+                        <h3>Domain Knowledge...</h3>
                         <div class="tools-tags">
-                            <span>[Tech 1]</span>
-                            <span>[Tech 2]</span>
-                            <span>[Tech 3]</span>
-                            <span>[Tech 4]</span>
-                            <span>[Tech 5]</span>
+                            <span>Windows Internals</span>
+                            <span>Active Directory</span>
+                            <span>Kerberos</span>
+                            <span>C2 Design</span>
+                            <span>LLM Jailbreaking</span>
+                            <span>Cloud Security</span>
+                            <span>Offensive Operations</span>
                         </div>
                     </div>
                 </div>
@@ -161,9 +210,8 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; SAKURA pookified theme, 4xura for the 2D Diana. 20## [Your Name]. All writeups are for educational
-                purposes.</p>
-            <p class="footer-note">[Your Footer Note Here]</p>
+            <p>&copy; Sameer Shah. All writeups are for educational purposes.</p>
+            <p class="footer-note">"What we fear doing most is usually what we most need to do." — Tim Ferriss</p>
         </div>
     </footer>
 
