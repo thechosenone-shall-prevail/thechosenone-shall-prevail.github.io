@@ -1,5 +1,5 @@
 {
   "buildCommand": "echo 'Static site deployment'",
-  "outputDirectory": "blog1",
+  "outputDirectory": ".",
   "installCommand": "echo 'No dependencies'"
 }
