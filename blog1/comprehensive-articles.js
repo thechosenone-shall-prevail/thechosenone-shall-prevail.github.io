@@ -6,5 +6,5 @@ const comprehensiveArticles = {
 
 // Make available globally
 if (typeof window !== 'undefined') {
-    window.comprehensiveArticles = comprehensiveArticles;
+    window.comprehensiveArticles = Object.assign(window.comprehensiveArticles || {}, comprehensiveArticles);
 }
