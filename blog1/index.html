@@ -17,7 +17,7 @@
         <div class="nav-container">
             <div class="nav-brand">
                 <h2>Sameer Shah</h2>
-                <p class="nav-tagline">Security Researcher & Adversarial Thinker</p>
+                <p class="nav-tagline">Security Researcher, Adversarial Thinker & a Student!</p>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="active">Home</a></li>
@@ -39,7 +39,7 @@
             <div class="hero-content">
         <h1> Security Researcher, Adversarial Thinker & a Student! </h1>
                 <p class="hero-description">
-                    I study how systems fail, then I build things that prove it. Deep in AI Red Teaming, Windows Internals, and finding the gaps between claim and reality.
+                    I study how systems fail, then I build things that prove it. Deep in AI Red Teaming and Windows Internals.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
@@ -75,11 +75,11 @@
                 </div>
                 <div class="featured-image">
                     <div class="code-preview">
-                        <pre><code># Enumerating High-Priv Delegation
-Get-DomainUser -TrustedToAuth | Select-Object samaccountname, msds-allowedtodelegateto
+                        <pre><code># Check Delegation
+Get-DomainUser -TrustedToAuth
 
-# RBCD Exploitation (S4U)
-Rubeus.exe s4u /user:FAKE01$ /rc4:HASH /impersonateuser:Administrator /msdsspn:cifs/TARGET01 /ptt</code></pre>
+# S4U Attack
+Rubeus.exe s4u /impersonate:Admin /ptt</code></pre>
                     </div>
                 </div>
             </article>
@@ -148,7 +148,7 @@ Rubeus.exe s4u /user:FAKE01$ /rc4:HASH /impersonateuser:Administrator /msdsspn:c
                         I've worked across the full stack of offensive research from kernel-level Windows internals to LLM constitutional bypasses. Cloud infrastructure, custom C2 servers, live network attacks, real operating environments. Done in the actual wild :)
                     </p>
                     <blockquote>
-                        "Every system has a gap between what it claims to do and what it actually does. That gap is my workspace."
+                        "I don't identify as a developer. I study how systems fail, then I build things that prove it."
                     </blockquote>
                     <div class="about-focus">
                         <h3>Research Focus:</h3>

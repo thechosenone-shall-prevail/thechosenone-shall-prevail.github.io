@@ -915,7 +915,7 @@ body {
 }
 
 .hero-content h1 {
-    animation: gentlePulse 4s ease-in-out infinite;
+    /* Animation removed as per request */
 }
 
 /* Shimmer Effect on Hover */
