@@ -1,0 +1,32 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Diana.moc3",
+		"Textures": [
+			"Diana.4096/texture_00.png"
+		],
+		"Physics": "physcs3.json",
+		"Motions": {
+			"Idle": [{
+				"File": "idle_motion.json"
+			}],
+			"Tap": [
+				{
+					"File": "tap6_motion3.json"
+				},
+				{
+					"File": "tap7_motion3.json"
+				},
+				{
+					"File": "tap8_motion3.json"
+				}
+			]
+		}
+	},
+	"HitAreas": [
+		{
+			"Name": "Body",
+			"Id": "HitArea"
+		}
+	]
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sameer Shah - Cybersecurity & Penetration Testing</title>
+    <meta name="description"
+        content="Technical blog on cybersecurity, penetration testing, networking, and ethical hacking by Sameer shah">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>[Your Brand/Name]</h2>
+                <p class="nav-tagline">[Your Tagline Here]</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1> Articles, Projects & Stuff I Actually Find Interesting :D </h1>
+                <p class="hero-description">
+                    Topics I teach, projects I build, and things I'm figuring out — mostly cybersecurity stuff.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Articles (more coming!)</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Things to Learn</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">:D</span>
+                        <span class="stat-label">Always Having Fun With It</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-section">
+            <h2 class="section-title">Featured Article</h2>
+            <article class="featured-article" onclick="loadArticle('placeholder-id')">
+                <div class="featured-content">
+                    <span class="article-tag">[Category Tag]</span>
+                    <h3>[Your Featured Article Title]</h3>
+                    <p class="article-excerpt">
+                        [This is where the excerpt for your featured article goes. 
+                        Replace this text with a summary of the article's contents, 
+                        highlighting key topics and why it is important to read.]
+                    </p>
+                    <div class="article-meta">
+                        <span class="read-time">[X] min read</span>
+                        <span class="date">[Publish Date]</span>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="code-preview">
+                        <pre><code># [Code Snippet Title]
+[Your code example here]
+
+# [Another snippet]
+[Your code here]</code></pre>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Articles Grid -->
+        <section id="articles" class="articles-section">
+            <h2 class="section-title">Articles & Projects :D</h2>
+            <div class="articles-grid">
+                <!-- Article: Disk Wiper -->
+                <article class="article-card post-list-thumb" onclick="loadArticle('disk-wiper')">
+                    <div class="article-header">
+                        <span class="article-tag">Malware Analysis</span>
+                        <span class="difficulty intermediate">Intermediate</span>
+                    </div>
+                    <h3>Scorched Earth: How Disk Wipers Actually Work</h3>
+                    <p class="article-excerpt">
+                        Breaking down a disk wiper I built in C — raw Win32 disk I/O, MBR/GPT destruction,
+                        and why the first 1MB of your drive is everything. Educational obviously :D
+                    </p>
+                    <div class="article-footer">
+                        <span class="read-time">20 min read</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </article>
+
+                <!-- More articles dropping soon! -->
+                <div class="coming-soon-card">
+                    <span class="article-tag">Coming Soon</span>
+                    <h3>More articles & projects on the way! :D</h3>
+                    <p class="article-excerpt">
+                        Working on stuff — offensive security, projects and more. Drop back soon!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        [Write your personal or professional biography here. Describe your journey, interests, and what you aim to share through this blog.]
+                    </p>
+                    <p>
+                        [Second paragraph: Expand on your background, current role, or specific areas of expertise.]
+                    </p>
+                    <p>
+                        [Third paragraph: Add a concluding thought, welcoming readers or stating your blog's mission.]
+                    </p>
+                    <blockquote>
+                        "[Your favorite quote goes here]"
+                    </blockquote>
+                    <div class="about-focus">
+                        <h3>Currently Learning:</h3>
+                        <ul>
+                            <li>[Topic or skill you are learning]</li>
+                            <li>[Another topic or skill]</li>
+                            <li>[Additional interest]</li>
+                        </ul>
+                    </div>
+                    <div class="about-tools">
+                        <h3>Technologies I'm familiar with...</h3>
+                        <div class="tools-tags">
+                            <span>[Tech 1]</span>
+                            <span>[Tech 2]</span>
+                            <span>[Tech 3]</span>
+                            <span>[Tech 4]</span>
+                            <span>[Tech 5]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; SAKURA pookified theme, 4xura for the 2D Diana. 20## [Your Name]. All writeups are for educational
+                purposes.</p>
+            <p class="footer-note">[Your Footer Note Here]</p>
+        </div>
+    </footer>
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeArticle()">&times;</button>
+            <div id="article-content"></div>
+        </div>
+    </div>
+
+    <!-- Anime cute elements -->
+    <div class="sakura-falling"></div>
+
+    <!-- Live2D Diana Container -->
+    <div class="pio-container left">
+        <div class="pio-action"></div>
+        <canvas id="pio" width="300" height="400"></canvas>
+    </div>
+
+    <!-- Load scripts in correct order -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Polyfill for loadCSS function that skru.js needs
+        function loadCSS(href) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = href;
+            document.head.appendChild(link);
+        }
+    </script>
+
+    <!-- Live2D Dependencies - Must load in this exact order -->
+    <link rel="stylesheet" href="live2d/diana/pio.css">
+
+    <!-- Load Cubism Core from CDN (local file is corrupted) -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <script>
+        // Check if Live2DCubismCore is available
+        console.log("[Setup] Checking Live2DCubismCore...");
+        console.log("[Setup] typeof Live2DCubismCore:", typeof Live2DCubismCore);
+
+        if (typeof Live2DCubismCore === 'undefined') {
+            console.error("[Setup] Live2DCubismCore not found! This will cause issues.");
+        } else {
+            console.log("[Setup] Live2DCubismCore loaded successfully!");
+        }
+    </script>
+
+    <!-- Then PIXI -->
+    <script src="live2d/diana/pixi.min.js"></script>
+
+    <!-- Then the bundled pixi-live2d-display (cubism4.js) -->
+    <script src="live2d/diana/cubism4.js"></script>
+    <script>
+        // Check what was loaded
+        console.log("[Setup] After loading cubism4.js:");
+        console.log("[Setup] PIXI.live2d:", PIXI.live2d);
+        if (typeof PIXI.live2d === 'object') {
+            var keys = Object.keys(PIXI.live2d);
+            console.log("[Setup] PIXI.live2d properties:", keys);
+            keys.forEach(key => {
+                console.log("[Setup]   - " + key + ":", typeof PIXI.live2d[key]);
+            });
+        }
+    </script>
+
+    <!-- Then other dependencies -->
+    <script src="live2d/diana/TweenLite.js"></script>
+    <script src="live2d/diana/pio.js?v=5"></script>
+    <script src="live2d/diana/pio_sdk4.js"></script>
+    <script src="live2d/diana/load.js?v=2"></script>
+    <script src="mashiro-config.js"></script>
+    <script src="skru.js"></script>
+    <script src="anime-effects.js"></script>
+    <script src="articles/featured-AD.js"></script>
+    <script src="articles/wiper.js"></script>
+    <script src="comprehensive-articles.js"></script>
+    <script src="script.js"></script>
+    <script src="bees.js"></script>
+
+    <!-- Scroll Progress Tracker -->
+    <script>
+        // Track reading progress
+        window.addEventListener('scroll', function () {
+            const scrollProgress = document.getElementById('scrollProgress');
+            if (scrollProgress) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                scrollProgress.style.width = progress + '%';
+            }
+        });
+    </script>
+</body>
+
+</html>
