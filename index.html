@@ -2,280 +2,231 @@
 <html lang="en">
 
 <head>
-    <!-- Site optimized for GitHub Pages and Vercel -->
     <meta charset="UTF-8">
-    <title>Sameer Shah - Security Researcher & Adversarial Thinker</title>
-    <meta name="description"
-        content="Technical blog on AI Red Teaming, Windows Internals, and Active Directory by Sameer Shah (the chosen one)">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Shah</title>
+    <meta name="description" content="Offensive security research. Windows kernel, Active Directory, EDR.">
+    <meta name="author" content="Sameer Shah">
+    <meta property="og:title" content="Sameer Shah">
+    <meta property="og:description" content="Offensive security research. Windows kernel, Active Directory, EDR.">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <h2>Sameer Shah</h2>
-                <p class="nav-tagline">Security Researcher, Adversarial Thinker & a Student!</p>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-                </label>
-            </div>
-        </div>
+
+    <!-- The church, held behind everything -->
+    <div class="church" aria-hidden="true"></div>
+    <div class="candle" aria-hidden="true"></div>
+
+
+    <nav class="nav">
+        <a class="nav-name" href="#top">Sameer Shah</a>
+        <ul class="nav-links">
+            <li><a href="#creed">Creed</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <main class="container">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-        <h1> Security Researcher, Adversarial Thinker & a Student! </h1>
-                <p class="hero-description">
-                    I study how systems fail, then I build things that prove it. Deep in AI Red Teaming and Windows Internals.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">HTB</span>
-                        <span class="stat-label">Top 0.5%</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">System Gaps to Explore</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">:D</span>
-                        <span class="stat-label">Adversarial Mindset</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main id="top">
 
-        <!-- Featured Article -->
-        <section class="featured-section">
-            <h2 class="section-title">Featured Article</h2>
-            <article class="featured-article" onclick="loadArticle('ad-advanced')">
-                <div class="featured-content">
-                    <span class="article-tag">Active Directory</span>
-                    <h3>Active Directory Advanced Attacks: GPO, Delegation, and Persistence</h3>
-                    <p class="article-excerpt">
-                        Mastering sophisticated AD exploitation methods—from GPO abuse and Kerberos delegation (unconstrained, constrained, RBCD) to NTLM relay and advanced ticket attacks. Understanding where systems fail under pressure.
-                    </p>
-                    <div class="article-meta">
-                        <span class="read-time">70 min read</span>
-                        <span class="date">February 15, 2025</span>
+        <!-- Hero -->
+        <header class="hero">
+            <div class="hero-grid">
+                <aside class="sigil-card">
+                    <div class="sigil-frame">
+                        <img src="skull_insignia.png" alt="Skull sigil" class="sigil-img">
                     </div>
-                </div>
-                <div class="featured-image">
-                    <div class="code-preview">
-                        <pre><code># Check Delegation
-Get-DomainUser -TrustedToAuth
-
-# S4U Attack
-Rubeus.exe s4u /impersonate:Admin /ptt</code></pre>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <!-- Articles Grid -->
-        <section id="articles" class="articles-section">
-            <h2 class="section-title">Articles & Projects :D</h2>
-            <div class="articles-grid">
-                <!-- Article: Disk Wiper -->
-                <article class="article-card post-list-thumb" onclick="loadArticle('disk-wiper')">
-                    <div class="article-header">
-                        <span class="article-tag">Malware Analysis</span>
-                        <span class="difficulty intermediate">Intermediate</span>
-                    </div>
-                    <h3>Scorched Earth: How Disk Wipers Actually Work</h3>
-                    <p class="article-excerpt">
-                        Breaking down a disk wiper I built in C — raw Win32 disk I/O, MBR/GPT destruction,
-                        and why the first 1MB of your drive is everything. Educational obviously :D
-                    </p>
-                    <div class="article-footer">
-                        <span class="read-time">20 min read</span>
-                        <span class="arrow">→</span>
-                    </div>
-                </article>
-
-                <!-- Project: KERB-SLEUTH -->
-                <article class="article-card post-list-thumb" onclick="window.open('https://github.com/thechosenone-shall-prevail/KERB-SLEUTH', '_blank')">
-                    <div class="article-header">
-                        <span class="article-tag">Project / Tool</span>
-                        <span class="difficulty advanced">Go</span>
-                    </div>
-                    <h3>KERB-SLEUTH</h3>
-                    <p class="article-excerpt">
-                        Advanced Go CLI tool for Active Directory Kerberos security triage. Automates live LDAP enumeration and password cracking.
-                    </p>
-                    <div class="article-footer">
-                        <span class="read-time">GitHub Repo</span>
-                        <span class="arrow">↗</span>
-                    </div>
-                </article>
-
-                <!-- More articles dropping soon! -->
-                <div class="coming-soon-card">
-                    <span class="article-tag">Coming Soon</span>
-                    <h3>More articles & projects on the way! :D</h3>
-                    <p class="article-excerpt">
-                        Working on stuff — offensive security, projects and more. Drop back soon!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I don't identify as a developer. Code is a tool, the same way Kali is a tool, and Burp Suite is a tool, and a well-crafted LDAP filter is a tool. What I actually do is study how systems fail. Then I build things that prove it.
-                    </p>
-                    <p>
-                        Right now I'm deep in two spaces that are fundamentally the same problem: AI alignment as an attack surface and Windows Active Directory trust abuse. Both are about finding where a system's confidence in itself exceeds its actual security posture.
-                    </p>
-                    <p>
-                        I've worked across the full stack of offensive research from kernel-level Windows internals to LLM constitutional bypasses. Cloud infrastructure, custom C2 servers, live network attacks, real operating environments. Done in the actual wild :)
-                    </p>
-                    <blockquote>
-                        "Most systems aren't broken they either have gaps or can be done other ways around which the tradiotionalist dont see. I'm just looking for them. :D"
+                    <div class="sigil-label">The Chosen One</div>
+                </aside>
+                <div class="hero-text">
+                    <p class="overline">Offensive security research</p>
+                    <h1 class="titlemark">Sameer Shah</h1>
+                    <p class="hero-line">I study how strong things break.</p>
+                    <blockquote class="epigraph">
+                        Every system confesses what it fears. Sit with it long enough and you hear it.
                     </blockquote>
-                    <div class="about-focus">
-                        <h3>Research Focus:</h3>
-                        <ul>
-                            <li><strong>AI Red Teaming:</strong> Exploring holes in approximately aligned models.</li>
-                            <li><strong>Windows Trust Architecture:</strong> Exploiting decisions made before modern threat actors existed.</li>
-                            <li><strong>C2 Infrastructure:</strong> Building and operating real command-and-control systems.</li>
-                            <li><strong>Cloud Privilege Escalation:</strong> Hunting for IAM misconfigurations and role chaining.</li>
-                        </ul>
-                    </div>
-                    <div class="about-tools">
-                        <h3>Domain Knowledge...</h3>
-                        <div class="tools-tags">
-                            <span>Windows Internals</span>
-                            <span>Active Directory</span>
-                            <span>Kerberos</span>
-                            <span>C2 Design</span>
-                            <span>LLM Jailbreaking</span>
-                            <span>Cloud Security</span>
-                            <span>Offensive Operations</span>
-                        </div>
-                    </div>
+                    <p class="founder">Founder of <a href="https://1000beacons.com" target="_blank" rel="noopener">1000 Beacons</a>.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Creed -->
+        <section id="creed" class="section">
+            <h2 class="section-title">The hundred cuts</h2>
+            <div class="creed-grid">
+                <figure class="plate">
+                    <img src="covert_whisper.jpg" alt="Two women, one leaning in to whisper to the other">
+                    <figcaption>The quietest channel is a whisper.</figcaption>
+                </figure>
+                <div class="creed-body">
+                    <p class="lede">
+                        I do not out-muscle a defense built by capable people. I read it until its idea
+                        of the world stops matching the machine, then press on that one seam until it opens.
+                    </p>
+                    <ul class="seams">
+                        <li>Kernel filters that trust the wrong path.</li>
+                        <li>Delegation left to rot for twenty years.</li>
+                        <li>Agents that still honor a signed, forgotten driver.</li>
+                        <li>Aligned models that bleed under patience.</li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <!-- Work -->
+        <section id="work" class="section">
+            <h2 class="section-title">Work</h2>
+
+            <ol class="entries">
+                <li class="entry" data-dossier="meedr-bleeder">
+                    <div class="entry-head">
+                        <h3 class="entry-title">MEEDR Bleeder</h3>
+                        <span class="entry-note">Acknowledged by Zoho</span>
+                    </div>
+                    <p class="entry-line">Bleeding ManageEngine's EDR out from Ring 0.</p>
+                    <div class="entry-links">
+                        <button class="read" type="button" onclick="openDossier('meedr-bleeder')">Read</button>
+                        <a href="https://github.com/thechosenone-shall-prevail/MEEDRBleeder" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </li>
+
+                <li class="entry" data-dossier="burning-sun">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Burning Sun</h3>
+                        <span class="entry-note">0-day, unpatched</span>
+                    </div>
+                    <p class="entry-line">A race to SYSTEM through Defender's own signature pipeline.</p>
+                    <div class="entry-links">
+                        <button class="read" type="button" onclick="openDossier('burning-sun')">Read</button>
+                        <a href="https://github.com/thechosenone-shall-prevail/Burning-Sun" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Cold Relay</h3>
+                    </div>
+                    <p class="entry-line">One binary that maps a domain's every quiet path to ruin.</p>
+                    <div class="entry-links">
+                        <a href="https://github.com/thechosenone-shall-prevail/cold-relay" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Software Butcher</h3>
+                    </div>
+                    <p class="entry-line">An autonomous adversary that keeps only what it can prove.</p>
+                    <div class="entry-links">
+                        <a href="https://github.com/thechosenone-shall-prevail/software-butcher" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Kerb-Sleuth</h3>
+                    </div>
+                    <p class="entry-line">Kerberos triage for the patient part of an engagement.</p>
+                    <div class="entry-links">
+                        <a href="https://github.com/thechosenone-shall-prevail/KERB-SLEUTH" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Minimum Viable Distillation</h3>
+                    </div>
+                    <p class="entry-line">Taking a model's mind one patient question at a time.</p>
+                    <div class="entry-links">
+                        <a href="https://github.com/thechosenone-shall-prevail/Minimum-Viable-Distillation" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Writing -->
+        <section id="writing" class="section">
+            <h2 class="section-title">Writing</h2>
+
+            <ol class="entries">
+                <li class="entry" onclick="openDossier('meedr-bleeder')">
+                    <div class="entry-head">
+                        <h3 class="entry-title">MEEDR Bleeder</h3>
+                        <span class="entry-note">Kernel</span>
+                    </div>
+                    <p class="entry-line">A minifilter that reads the wrong path, and a signed driver that ends the rest.</p>
+                    <div class="entry-links"><button class="read" type="button" onclick="openDossier('meedr-bleeder')">Read</button></div>
+                </li>
+
+                <li class="entry" onclick="openDossier('burning-sun')">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Burning Sun</h3>
+                        <span class="entry-note">Windows LPE</span>
+                    </div>
+                    <p class="entry-line">Freezing Defender mid-scan and swapping the file out from under it.</p>
+                    <div class="entry-links"><button class="read" type="button" onclick="openDossier('burning-sun')">Read</button></div>
+                </li>
+
+                <li class="entry" onclick="openDossier('ad-advanced')">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Active Directory, the long decay</h3>
+                        <span class="entry-note">Active Directory</span>
+                    </div>
+                    <p class="entry-line">Delegation, GPO abuse, and the whole family of forged tickets.</p>
+                    <div class="entry-links"><button class="read" type="button" onclick="openDossier('ad-advanced')">Read</button></div>
+                </li>
+
+                <li class="entry" onclick="openDossier('disk-wiper')">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Scorched Earth</h3>
+                        <span class="entry-note">Storage internals</span>
+                    </div>
+                    <p class="entry-line">Reaching past the filesystem to the raw disk, in C.</p>
+                    <div class="entry-links"><button class="read" type="button" onclick="openDossier('disk-wiper')">Read</button></div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-last">
+            <h2 class="section-title">Contact</h2>
+            <p class="lede">For disclosure, engagements, and the quiet kind of research.</p>
+            <ul class="contacts">
+                <li><a href="https://github.com/thechosenone-shall-prevail" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/sameer-shah63/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="mailto:godmaximus663@gmail.com">Email</a></li>
+                <li><a href="tel:9384800633">9384800633</a></li>
+                <li><a href="https://1000beacons.com" target="_blank" rel="noopener">1000 Beacons</a></li>
+                <li><a href="https://app.hackthebox.com/" target="_blank" rel="noopener">Hack The Box</a></li>
+            </ul>
+        </section>
+
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; Sameer Shah. All writeups are for educational purposes.</p>
-            <p class="footer-note">"What we fear doing most is usually what we most need to do." — Tim Ferriss</p>
-        </div>
+        <span>Sameer Shah</span>
+        <span>MMXXVI</span>
     </footer>
 
-    <!-- Article Modal -->
-    <div id="article-modal" class="modal">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeArticle()">&times;</button>
-            <div id="article-content"></div>
+    <!-- Reader -->
+    <div id="reader" class="reader" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="reader-frame">
+            <button class="reader-close" id="reader-close" aria-label="Close">Close</button>
+            <div class="reader-body" id="reader-body"></div>
         </div>
     </div>
 
-    <!-- Anime cute elements -->
-    <div class="sakura-falling"></div>
-
-    <!-- Live2D Diana Container -->
-    <div class="pio-container left">
-        <div class="pio-action"></div>
-        <canvas id="pio" width="300" height="400"></canvas>
-    </div>
-
-    <!-- Load scripts in correct order -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        // Polyfill for loadCSS function that skru.js needs
-        function loadCSS(href) {
-            var link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = href;
-            document.head.appendChild(link);
-        }
-    </script>
-
-    <!-- Live2D Dependencies - Must load in this exact order -->
-    <link rel="stylesheet" href="live2d/diana/pio.css">
-
-    <!-- Load Cubism Core from CDN (local file is corrupted) -->
-    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
-    <script>
-        // Check if Live2DCubismCore is available
-        console.log("[Setup] Checking Live2DCubismCore...");
-        console.log("[Setup] typeof Live2DCubismCore:", typeof Live2DCubismCore);
-
-        if (typeof Live2DCubismCore === 'undefined') {
-            console.error("[Setup] Live2DCubismCore not found! This will cause issues.");
-        } else {
-            console.log("[Setup] Live2DCubismCore loaded successfully!");
-        }
-    </script>
-
-    <!-- Then PIXI -->
-    <script src="live2d/diana/pixi.min.js"></script>
-
-    <!-- Then the bundled pixi-live2d-display (cubism4.js) -->
-    <script src="live2d/diana/cubism4.js"></script>
-    <script>
-        // Check what was loaded
-        console.log("[Setup] After loading cubism4.js:");
-        console.log("[Setup] PIXI.live2d:", PIXI.live2d);
-        if (typeof PIXI.live2d === 'object') {
-            var keys = Object.keys(PIXI.live2d);
-            console.log("[Setup] PIXI.live2d properties:", keys);
-            keys.forEach(key => {
-                console.log("[Setup]   - " + key + ":", typeof PIXI.live2d[key]);
-            });
-        }
-    </script>
-
-    <!-- Then other dependencies -->
-    <script src="live2d/diana/TweenLite.js"></script>
-    <script src="live2d/diana/pio.js?v=5"></script>
-    <script src="live2d/diana/pio_sdk4.js"></script>
-    <script src="live2d/diana/load.js?v=2"></script>
-    <script src="mashiro-config.js"></script>
-    <script src="skru.js"></script>
-    <script src="anime-effects.js"></script>
-    <script src="articles/featured-AD.js"></script>
-    <script src="articles/wiper.js"></script>
-    <script src="comprehensive-articles.js"></script>
-    <script src="script.js"></script>
-    <script src="bees.js"></script>
-
-    <!-- Scroll Progress Tracker -->
-    <script>
-        // Track reading progress
-        window.addEventListener('scroll', function () {
-            const scrollProgress = document.getElementById('scrollProgress');
-            if (scrollProgress) {
-                const windowHeight = window.innerHeight;
-                const documentHeight = document.documentElement.scrollHeight - windowHeight;
-                const scrolled = window.scrollY;
-                const progress = (scrolled / documentHeight) * 100;
-                scrollProgress.style.width = progress + '%';
-            }
-        });
-    </script>
+    <script src="articles-data.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
